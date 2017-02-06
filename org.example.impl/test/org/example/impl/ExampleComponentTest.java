@@ -1,4 +1,4 @@
-package org.example.impl2;
+package org.example.impl;
 
 import org.example.impl.ExampleComponent;
 
