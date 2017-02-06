@@ -1,0 +1,17 @@
+-buildpath: \
+	osgi.annotation;version=6.0.1,\
+	osgi.core;version=6.0,\
+	osgi.cmpn;version=6.0,\
+	org.example.REST.api;version=latest,\
+	com.eclipsesource.jaxrs.jersey-all;version=2.22,\
+	org.example.api;version=latest,\
+	com.eclipsesource.jaxrs.swagger-all
+
+-testpath: \
+	${junit}
+
+javac.source: 1.8
+javac.target: 1.8
+
+Bundle-Version: 0.0.0.${tstamp}
+Private-Package: org.example.REST.impl
