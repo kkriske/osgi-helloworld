@@ -16,7 +16,8 @@ public class GreeterResourceImpl implements GreeterResource {
 
 	@Override
 	public String hello(String name) {
-		return "Hello " + name;
+		if("put".equals(name))name="putput";
+		return greeter.sayHello(name);
 	}
 
 	@Activate
