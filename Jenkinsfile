@@ -17,9 +17,6 @@ pipeline {
 	}
 }
 node {
-  stage('SCM') {
-    checkout scm
-  }
   stage('SonarQube analysis') {
     // requires SonarQube Scanner 2.8+
     def scannerHome = tool 'SonarQube Scanner 2.8';
