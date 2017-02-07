@@ -13,8 +13,8 @@
 	org.apache.felix.gogo.shell;version='[0.12.0,0.12.1)',\
 	org.apache.felix.metatype;version='[1.1.2,1.1.3)',\
 	org.apache.felix.scr;version='[2.0.6,2.0.7)',\
-	org.example.REST.api;version=snapshot,\
-	org.example.REST.impl;version=snapshot,\
+	org.example.rest.api;version=snapshot,\
+	org.example.rest.impl;version=snapshot,\
 	org.example.webserver;version=snapshot,\
 	com.eclipsesource.jaxrs.publisher;version='[5.3.1,5.3.2)',\
 	org.apache.felix.http.jetty;version='[3.1.6,3.1.7)',\
@@ -30,7 +30,7 @@
 	osgi.identity;filter:='(osgi.identity=org.apache.felix.configadmin)',\
 	osgi.identity;filter:='(osgi.identity=org.apache.felix.eventadmin)',\
 	osgi.identity;filter:='(osgi.identity=org.apache.felix.metatype)',\
-	osgi.identity;filter:='(osgi.identity=org.example.REST.impl)',\
+	osgi.identity;filter:='(osgi.identity=org.example.rest.impl)',\
 	osgi.identity;filter:='(osgi.identity=org.example.webserver)',\
 	osgi.identity;filter:='(osgi.identity=com.eclipsesource.jaxrs.publisher)',\
 	osgi.identity;filter:='(osgi.identity=org.example.impl)',\
