@@ -13,7 +13,7 @@ pipeline {
 				sh './gradlew check'
 			}
 		}
-		node {
+		node('sonar') {
 			stage('SonarQube analysis') {
 				// requires SonarQube Scanner 2.8+
 				def scannerHome = tool 'SonarQube Scanner 2.8';
