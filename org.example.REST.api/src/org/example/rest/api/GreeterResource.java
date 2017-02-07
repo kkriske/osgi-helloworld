@@ -1,4 +1,4 @@
-package org.example.REST.api;
+package org.example.rest.api;
 
 import javax.ws.rs.DefaultValue;
 import javax.ws.rs.GET;

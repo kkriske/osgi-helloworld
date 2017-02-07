@@ -1,6 +1,6 @@
-package org.example.REST.impl;
+package org.example.rest.impl;
 
-import org.example.REST.api.GreeterResource;
+import org.example.rest.api.GreeterResource;
 import org.example.api.Greeter;
 import org.osgi.service.component.annotations.*;
 

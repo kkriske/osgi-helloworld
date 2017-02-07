@@ -1,4 +1,4 @@
-Export-Package: org.example.REST.api
+Export-Package: org.example.rest.api
 -buildpath: \
 	com.eclipsesource.jaxrs.jersey-all,\
 	com.eclipsesource.jaxrs.swagger-all

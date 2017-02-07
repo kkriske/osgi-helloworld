@@ -1,4 +1,4 @@
-package org.example.REST.impl;
+package org.example.rest.impl;
 
 //import static org.junit.Assert.*;
 
