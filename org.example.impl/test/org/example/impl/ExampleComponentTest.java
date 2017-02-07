@@ -1,11 +1,13 @@
 package org.example.impl;
 
+import static org.junit.Assert.*;
+
 import org.example.impl.ExampleComponent;
+import org.junit.Test;
 
-import junit.framework.TestCase;
+public class ExampleComponentTest {
 
-public class ExampleComponentTest extends TestCase {
-
+	@Test
 	public void testSaysHello() throws Exception {
 		String result = new ExampleComponent().sayHello("Bob");
 		assertEquals("Hello Bob", result);
