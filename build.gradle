@@ -15,18 +15,6 @@ buildscript {
   }
 }
 
-plugins {
-  id "org.sonarqube" version "2.2"
-}
-
-sonarqube {
-    properties {
-        property "systemProp.sonar.projectKey", "kkriske:osgi-helloworld"
-		property "systemProp.sonar.junit.reportsPath", "target/test-reports"
-		property "systemProp.sonar.jacoco.reportsPath", "target/test-reports"
-    }
-}
-
 /* Initialize the bnd workspace */
 Workspace.setDriver(Constants.BNDDRIVER_GRADLE)
 Workspace.addGestalt(Constants.GESTALT_BATCH, null)
