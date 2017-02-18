@@ -15,6 +15,10 @@ buildscript {
   }
 }
 
+plugins {
+  id "org.sonarqube" version "2.2"
+}
+
 /* Initialize the bnd workspace */
 Workspace.setDriver(Constants.BNDDRIVER_GRADLE)
 Workspace.addGestalt(Constants.GESTALT_BATCH, null)
@@ -33,3 +37,4 @@ subprojects {
 task wrapper(type: Wrapper) {
   jarFile = rootProject.file('.gradle-wrapper/gradle-wrapper.jar')
 }
+
