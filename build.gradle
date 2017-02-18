@@ -15,6 +15,16 @@ buildscript {
   }
 }
 
+plugins {
+  id "org.sonarqube" version "2.2"
+}
+
+sonarqube {
+    properties {
+        property "sonar.projectKey", "kkriske:osgi-helloworld"
+    }
+}
+
 /* Initialize the bnd workspace */
 Workspace.setDriver(Constants.BNDDRIVER_GRADLE)
 Workspace.addGestalt(Constants.GESTALT_BATCH, null)
