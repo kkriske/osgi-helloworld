@@ -21,9 +21,9 @@ plugins {
 
 sonarqube {
     properties {
-        property "sonar.projectKey", "kkriske:osgi-helloworld"
-		property "sonar.junit.reportsPath", "target/test-reports"
-		property "sonar.jacoco.reportsPath", "target/test-reports"
+        property "systemProp.sonar.projectKey", "kkriske:osgi-helloworld"
+		property "systemProp.sonar.junit.reportsPath", "target/test-reports"
+		property "systemProp.sonar.jacoco.reportsPath", "target/test-reports"
     }
 }
 
