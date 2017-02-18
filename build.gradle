@@ -24,9 +24,9 @@ configure(subprojects.findAll {it.name.endsWith('.ui')} ) {
     outputs.files('/build') //dir for UP TO DATE checking
 	inputs.files('/static') //dir for UP TO DATE checking
 	doLast {
-	  println ''
+      println ''
       println "run angular build for $task.project.name"
-	  println ''
+      println ''
 	}
   }
 }
