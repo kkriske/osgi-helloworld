@@ -16,9 +16,26 @@ buildscript {
 }
 
 plugins {
-  id "java"
-  id "jacoco"
   id "org.sonarqube" version "2.2"
+}
+
+configure(subprojects.findAll {it.name.endsWith('.ui')} ) {
+  task angular(description: 'build angular bundles', group: 'Build') { task ->
+    outputs.files('/build') //dir for UP TO DATE checking
+	inputs.files('/static') //dir for UP TO DATE checking
+	doLast {
+	  println ''
+      println "run angular build for $task.project.name"
+	  println ''
+	}
+  }
+}
+
+allprojects {
+  tasks.whenTaskAdded { theTask ->
+    if (theTask.name.equals('assemble') && project.hasProperty('angular'))
+      theTask.dependsOn angular
+  }
 }
 
 /* Initialize the bnd workspace */
@@ -33,7 +50,6 @@ subprojects {
   def bndProject = bndWorkspace.getProject(name)
   if (bndProject != null) {
     plugins.apply 'biz.aQute.bnd'
-	plugins.apply 'jacoco'
   }
 }
 
