@@ -19,20 +19,6 @@ plugins {
   id "org.sonarqube" version "2.2"
 }
 
-subprojects {
-    sonarqube {
-        println "*************"
-        println "$project.name"
-        properties.each {
-            println "$it.key, $it.value"
-        }
-        println "Project Dir: $projectDir"
-        println "Project Dir: $project.projectDir"
-
-        println "*************"
-    }
-}
-
 /* Initialize the bnd workspace */
 Workspace.setDriver(Constants.BNDDRIVER_GRADLE)
 Workspace.addGestalt(Constants.GESTALT_BATCH, null)
