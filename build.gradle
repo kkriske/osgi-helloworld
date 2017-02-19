@@ -47,9 +47,15 @@ ext.cnf = rootProject.project(bnd_cnf)
 
 /* Configure the subprojects */
 subprojects {
+  repositories { 
+    maven {
+      url "https://plugins.gradle.org/m2/"
+    }
+  }
   def bndProject = bndWorkspace.getProject(name)
   if (bndProject != null) {
     plugins.apply 'biz.aQute.bnd'
+	plugins.apply 'jacoco'
   }
 }
 
